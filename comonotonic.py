@@ -135,11 +135,8 @@ class clustered_comonotonic:
         # get the prior probability and indices of instances for different classes
         prior_prob = dict() # key is class, value is the prior probability of this class
         class_idx = dict() # key is class, value is a list containing the indices of instances for this class
-        for i in range(len(self.y_train)):
-            if self.y_train[i] not in class_idx.keys():
-                class_idx[self.y_train[i]] = [i]
-            else:
-                class_idx[self.y_train[i]].append(i)
+        for value in np.unique(self.y_train):
+            class_idx[value] = np.squeeze(np.where(self.y_train == value)).tolist()
         prior_prob = {k:len(v)/len(self.y_train) for k,v in class_idx.items()}
         self.prior_prob = prior_prob
         self.class_idx = class_idx
@@ -224,30 +221,19 @@ class clustered_comonotonic:
             
             abs_corr = np.absolute(corr_matrix)
             distance_matrix = 1 - abs_corr
-            
-            try:
-                clusterer = AgglomerativeClustering(affinity='precomputed', linkage='average', 
-                                                    distance_threshold=1-self.min_corr, n_clusters=None)
-                clusterer.fit(distance_matrix)
-                adjusted_cluster_dict = dict()
-                for i,c in enumerate(clusterer.labels_):
-                    if c not in adjusted_cluster_dict.keys():
-                        adjusted_cluster_dict[c] = list()
-                    adjusted_cluster_dict[c].append(idx_4_cluster[i])
-                adjusted_cluster_book = list()
-                for k in adjusted_cluster_dict.keys():
-                    adjusted_cluster_book.append(adjusted_cluster_dict[k].copy())
-                self.cluster_book = adjusted_cluster_book
-                
-            except:
-                cluster_book = utils.cluster_agnes(distance_matrix, 1-self.min_corr)
-                adjusted_cluster_book = list()
-                for cluster in cluster_book:
-                    adjusted_cluster = list()
-                    for idx in cluster:
-                        adjusted_cluster.append(idx_4_cluster[idx])
-                    adjusted_cluster_book.append(adjusted_cluster)
-                self.cluster_book = adjusted_cluster_book
+
+            clusterer = AgglomerativeClustering(affinity='precomputed', linkage='average', 
+                                                distance_threshold=1-self.min_corr, n_clusters=None)
+            clusterer.fit(distance_matrix)
+            adjusted_cluster_dict = dict()
+            for i,c in enumerate(clusterer.labels_):
+                if c not in adjusted_cluster_dict.keys():
+                    adjusted_cluster_dict[c] = list()
+                adjusted_cluster_dict[c].append(idx_4_cluster[i])
+            adjusted_cluster_book = list()
+            for k in adjusted_cluster_dict.keys():
+                adjusted_cluster_book.append(adjusted_cluster_dict[k].copy())
+            self.cluster_book = adjusted_cluster_book
 
         # add clusters of categorical features
         if self.cate_clusters == None: # need to adjust self.unrankable
@@ -410,7 +396,7 @@ class clustered_comonotonic:
         return y_predict
     
     def print_cluster(self):
-        print(self.cluster_book)
+        return self.cluster_book
 
     def cross_entropy_loss(self, x_val, y_val): # x_val is np 2d array
         loss = 0
