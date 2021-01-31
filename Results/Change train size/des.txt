@@ -1,0 +1,4 @@
+financial distress change train size.txt
+在paper里用来说明CIBer的优越性。给定一个train size(0.1~0.8)的情况下, 用同一组test set（占比0.2）和full train set（占比0.8），重复五次实验，每次实验里随机从full train set中选取 train size/0.8 比例的samples作为train set，训练CIBer并测试它在test set上的classification accuracy。最终在每个train size下得到五个classification accuracy，求出95% confidence interval (i.e. mean +- t_value * std/sqrt(n)). 另外，对每个classifier，test set一模一样，用的同一个random state
+
+同样的思路，对oil spill和ozone进行实验。oil spill是image data，ozone是structural dataset

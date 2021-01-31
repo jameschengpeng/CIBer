@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2020)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: plainnat.bst
+Illegal, another \bibstyle command---line 181 of file main.aux
+ : \bibstyle
+ :          {plain}
+I'm skipping whatever remains of this command
+Database file #1: ref.bib
+Warning--I didn't find a database entry for "dhaene2002concept"
+Warning--empty journal in fayyad1993multi
+Warning--empty journal in hall2000correlation
+Warning--empty journal in spearman1961proof
+You've used 52 entries,
+            2773 wiz_defined-function locations,
+            892 strings with 13038 characters,
+and the built_in function-call counts, 24312 in all, are:
+= -- 2274
+> -- 1130
+< -- 53
++ -- 388
+- -- 336
+* -- 1806
+:= -- 3577
+add.period$ -- 167
+call.type$ -- 52
+change.case$ -- 264
+chr.to.int$ -- 52
+cite$ -- 107
+duplicate$ -- 1219
+empty$ -- 2151
+format.name$ -- 424
+if$ -- 5255
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 54
+newline$ -- 267
+num.names$ -- 208
+pop$ -- 573
+preamble$ -- 1
+purify$ -- 216
+quote$ -- 0
+skip$ -- 935
+stack$ -- 0
+substring$ -- 1108
+swap$ -- 192
+text.length$ -- 18
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 552
+warning$ -- 3
+while$ -- 248
+width$ -- 0
+write$ -- 680
+(There was 1 error message)

@@ -1,0 +1,329 @@
+\begin{thebibliography}{52}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Boull{\'e}(2007)]{boulle2007compression}
+Marc Boull{\'e}.
+\newblock Compression-based averaging of selective naive bayes classifiers.
+\newblock \emph{Journal of Machine Learning Research}, 8\penalty0
+  (Jul):\penalty0 1659--1685, 2007.
+
+\bibitem[Catlett(1991)]{catlett1991changing}
+Jason Catlett.
+\newblock On changing continuous attributes into ordered discrete attributes.
+\newblock In \emph{European working session on learning}, pages 164--178.
+  Springer, 1991.
+
+\bibitem[Chickering(2002)]{chickering2002optimal}
+David~Maxwell Chickering.
+\newblock Optimal structure identification with greedy search.
+\newblock \emph{Journal of machine learning research}, 3\penalty0
+  (Nov):\penalty0 507--554, 2002.
+
+\bibitem[Cooper and Herskovits(1992)]{cooper1992bayesian}
+Gregory~F Cooper and Edward Herskovits.
+\newblock A bayesian method for the induction of probabilistic networks from
+  data.
+\newblock \emph{Machine learning}, 9\penalty0 (4):\penalty0 309--347, 1992.
+
+\bibitem[Deelstra et~al.(2011)Deelstra, Dhaene, and
+  Vanmaele]{deelstra2011overview}
+Griselda Deelstra, Jan Dhaene, and Michele Vanmaele.
+\newblock An overview of comonotonicity and its applications in finance and
+  insurance.
+\newblock In \emph{Advanced mathematical methods for finance}, pages 155--179.
+  Springer, 2011.
+
+\bibitem[Dhaene et~al.(2006)Dhaene, Vanduffel, Goovaerts, Kaas, Tang, and
+  Vyncke]{dhaene2006risk}
+Jan Dhaene, Steven Vanduffel, Marc~J Goovaerts, Rob Kaas, Qihe Tang, and David
+  Vyncke.
+\newblock Risk measures and comonotonicity: a review.
+\newblock \emph{Stochastic models}, 22\penalty0 (4):\penalty0 573--606, 2006.
+
+\bibitem[Domingos and Pazzani(1996)]{domingos1996beyond}
+Pedro Domingos and Michael Pazzani.
+\newblock Beyond independence: Conditions for the optimality of the simple
+  bayesian classi er.
+\newblock In \emph{Proc. 13th Intl. Conf. Machine Learning}, pages 105--112,
+  1996.
+
+\bibitem[Domingos and Pazzani(1997)]{domingos1997optimality}
+Pedro Domingos and Michael Pazzani.
+\newblock On the optimality of the simple bayesian classifier under zero-one
+  loss.
+\newblock \emph{Machine learning}, 29\penalty0 (2-3):\penalty0 103--130, 1997.
+
+\bibitem[Dougherty et~al.(1995)Dougherty, Kohavi, and
+  Sahami]{dougherty1995supervised}
+James Dougherty, Ron Kohavi, and Mehran Sahami.
+\newblock Supervised and unsupervised discretization of continuous features.
+\newblock In \emph{Machine Learning Proceedings 1995}, pages 194--202.
+  Elsevier, 1995.
+
+\bibitem[Dua and Graff(2017)]{Dua:2019}
+Dheeru Dua and Casey Graff.
+\newblock {UCI} machine learning repository, 2017.
+\newblock URL \url{http://archive.ics.uci.edu/ml}.
+
+\bibitem[Duda et~al.(1973)Duda, Hart, and Stork]{duda1973pattern}
+Richard~O Duda, Peter~E Hart, and David~G Stork.
+\newblock \emph{Pattern classification and scene analysis}, volume~3.
+\newblock Wiley New York, 1973.
+
+\bibitem[Fayyad and Irani(1993)]{fayyad1993multi}
+Usama Fayyad and Keki Irani.
+\newblock Multi-interval discretization of continuous-valued attributes for
+  classification learning.
+\newblock 1993.
+
+\bibitem[Fern{\'a}ndez et~al.(2018)Fern{\'a}ndez, Garcia, Herrera, and
+  Chawla]{fernandez2018smote}
+Alberto Fern{\'a}ndez, Salvador Garcia, Francisco Herrera, and Nitesh~V Chawla.
+\newblock Smote for learning from imbalanced data: progress and challenges,
+  marking the 15-year anniversary.
+\newblock \emph{Journal of artificial intelligence research}, 61:\penalty0
+  863--905, 2018.
+
+\bibitem[Friedman et~al.(1997)Friedman, Geiger, and
+  Goldszmidt]{friedman1997bayesian}
+Nir Friedman, Dan Geiger, and Moises Goldszmidt.
+\newblock Bayesian network classifiers.
+\newblock \emph{Machine learning}, 29\penalty0 (2-3):\penalty0 131--163, 1997.
+
+\bibitem[G{\'a}mez et~al.(2011)G{\'a}mez, Mateo, and Puerta]{gamez2011learning}
+Jos{\'e}~A G{\'a}mez, Juan~L Mateo, and Jos{\'e}~M Puerta.
+\newblock Learning bayesian networks by hill climbing: efficient methods based
+  on progressive restriction of the neighborhood.
+\newblock \emph{Data Mining and Knowledge Discovery}, 22\penalty0 (1):\penalty0
+  106--148, 2011.
+
+\bibitem[Hall(2006)]{hall2006decision}
+Mark Hall.
+\newblock A decision tree-based attribute weighting filter for naive bayes.
+\newblock In \emph{International Conference on Innovative Techniques and
+  Applications of Artificial Intelligence}, pages 59--70. Springer, 2006.
+
+\bibitem[Hall(2000)]{hall2000correlation}
+Mark~A Hall.
+\newblock Correlation-based feature selection of discrete and numeric class
+  machine learning.
+\newblock 2000.
+
+\bibitem[Han et~al.(2011)Han, Pei, and Kamber]{han2011data}
+Jiawei Han, Jian Pei, and Micheline Kamber.
+\newblock \emph{Data mining: concepts and techniques}.
+\newblock Elsevier, 2011.
+
+\bibitem[Heckerman et~al.(1995)Heckerman, Geiger, and
+  Chickering]{heckerman1995learning}
+David Heckerman, Dan Geiger, and David~M Chickering.
+\newblock Learning bayesian networks: The combination of knowledge and
+  statistical data.
+\newblock \emph{Machine learning}, 20\penalty0 (3):\penalty0 197--243, 1995.
+
+\bibitem[Huang et~al.(2003)Huang, Lu, and Ling]{huang2003comparing}
+Jin Huang, Jingjing Lu, and Charles~X Ling.
+\newblock Comparing naive bayes, decision trees, and svm with auc and accuracy.
+\newblock In \emph{Third IEEE International Conference on Data Mining}, pages
+  553--556. IEEE, 2003.
+
+\bibitem[Jain et~al.(1999)Jain, Murty, and Flynn]{jain1999data}
+Anil~K Jain, M~Narasimha Murty, and Patrick~J Flynn.
+\newblock Data clustering: a review.
+\newblock \emph{ACM computing surveys (CSUR)}, 31\penalty0 (3):\penalty0
+  264--323, 1999.
+
+\bibitem[Jouini and Napp(2004)]{jouini2004conditional}
+Ely{\`e}s Jouini and Clotilde Napp.
+\newblock Conditional comonotonicity.
+\newblock \emph{Decisions in Economics and Finance}, 27\penalty0 (2):\penalty0
+  153--166, 2004.
+
+\bibitem[Kaufman and Rousseeuw(1990)]{kaufman1990finding}
+Leonard Kaufman and Peter~J Rousseeuw.
+\newblock \emph{Finding groups in data: an introduction to cluster analysis},
+  volume 344.
+\newblock John Wiley \& Sons, 1990.
+
+\bibitem[Kendall(1938)]{kendall1938new}
+Maurice~G Kendall.
+\newblock A new measure of rank correlation.
+\newblock \emph{Biometrika}, 30\penalty0 (1/2):\penalty0 81--93, 1938.
+
+\bibitem[Keogh and Pazzani(1999)]{keogh1999learning}
+Eamonn~J Keogh and Michael~J Pazzani.
+\newblock Learning augmented bayesian classifiers: A comparison of
+  distribution-based and classification-based approaches.
+\newblock In \emph{AIStats}. Citeseer, 1999.
+
+\bibitem[Kohavi(1996)]{kohavi1996scaling}
+Ron Kohavi.
+\newblock Scaling up the accuracy of naive-bayes classifiers: A decision-tree
+  hybrid.
+\newblock In \emph{Kdd}, volume~96, pages 202--207, 1996.
+
+\bibitem[Kubat et~al.(1998)Kubat, Holte, and Matwin]{kubat1998machine}
+Miroslav Kubat, Robert~C Holte, and Stan Matwin.
+\newblock Machine learning for the detection of oil spills in satellite radar
+  images.
+\newblock \emph{Machine learning}, 30\penalty0 (2-3):\penalty0 195--215, 1998.
+
+\bibitem[Kurita(1991)]{kurita1991efficient}
+Takio Kurita.
+\newblock An efficient agglomerative clustering algorithm using a heap.
+\newblock \emph{Pattern Recognition}, 24\penalty0 (3):\penalty0 205--209, 1991.
+
+\bibitem[Lam and Bacchus(1993)]{lam1993using}
+Wai Lam and Fahiem Bacchus.
+\newblock Using causal information and local measures to learn bayesian
+  networks.
+\newblock In \emph{Uncertainty in Artificial Intelligence}, pages 243--250.
+  Elsevier, 1993.
+
+\bibitem[Langley and Sage(1994)]{langley1994induction}
+Pat Langley and Stephanie Sage.
+\newblock Induction of selective bayesian classifiers.
+\newblock In \emph{Uncertainty Proceedings 1994}, pages 399--406. Elsevier,
+  1994.
+
+\bibitem[Larranaga et~al.(1996)Larranaga, Poza, Yurramendi, Murga, and
+  Kuijpers]{larranaga1996structure}
+Pedro Larranaga, Mikel Poza, Yosu Yurramendi, Roberto~H. Murga, and Cindy M.~H.
+  Kuijpers.
+\newblock Structure learning of bayesian networks by genetic algorithms: A
+  performance analysis of control parameters.
+\newblock \emph{IEEE transactions on pattern analysis and machine
+  intelligence}, 18\penalty0 (9):\penalty0 912--926, 1996.
+
+\bibitem[Lee and van Beek(2017)]{lee2017metaheuristics}
+Colin Lee and Peter van Beek.
+\newblock Metaheuristics for score-and-search bayesian network structure
+  learning.
+\newblock In \emph{Canadian Conference on Artificial Intelligence}, pages
+  129--141. Springer, 2017.
+
+\bibitem[Lee~Rodgers and Nicewander(1988)]{lee1988thirteen}
+Joseph Lee~Rodgers and W~Alan Nicewander.
+\newblock Thirteen ways to look at the correlation coefficient.
+\newblock \emph{The American Statistician}, 42\penalty0 (1):\penalty0 59--66,
+  1988.
+
+\bibitem[Lewis(1998)]{lewis1998naive}
+David~D Lewis.
+\newblock Naive (bayes) at forty: The independence assumption in information
+  retrieval.
+\newblock In \emph{European conference on machine learning}, pages 4--15.
+  Springer, 1998.
+
+\bibitem[Pazzani(1998)]{pazzani1998constructive}
+Michael~J Pazzani.
+\newblock Constructive induction of cartesian product attributes.
+\newblock In \emph{Feature Extraction, Construction and Selection}, pages
+  341--354. Springer, 1998.
+
+\bibitem[Pearl(2014)]{pearl2014probabilistic}
+Judea Pearl.
+\newblock \emph{Probabilistic reasoning in intelligent systems: networks of
+  plausible inference}.
+\newblock Elsevier, 2014.
+
+\bibitem[Quinlan(1986)]{quinlan1986induction}
+J.~Ross Quinlan.
+\newblock Induction of decision trees.
+\newblock \emph{Machine learning}, 1\penalty0 (1):\penalty0 81--106, 1986.
+
+\bibitem[Ruder(2016)]{ruder2016overview}
+Sebastian Ruder.
+\newblock An overview of gradient descent optimization algorithms.
+\newblock \emph{arXiv preprint arXiv:1609.04747}, 2016.
+
+\bibitem[Salzberg(1994)]{salzberg1994c4}
+Steven~L Salzberg.
+\newblock C4. 5: Programs for machine learning by j. ross quinlan. morgan
+  kaufmann publishers, inc., 1993, 1994.
+
+\bibitem[Shannon(2001)]{shannon2001mathematical}
+Claude~Elwood Shannon.
+\newblock A mathematical theory of communication.
+\newblock \emph{ACM SIGMOBILE mobile computing and communications review},
+  5\penalty0 (1):\penalty0 3--55, 2001.
+
+\bibitem[Spearman(1961)]{spearman1961proof}
+Charles Spearman.
+\newblock The proof and measurement of association between two things.
+\newblock 1961.
+
+\bibitem[Spiegelhalter et~al.(1993)Spiegelhalter, Dawid, Lauritzen, and
+  Cowell]{spiegelhalter1993bayesian}
+David~J Spiegelhalter, A~Philip Dawid, Steffen~L Lauritzen, and Robert~G
+  Cowell.
+\newblock Bayesian analysis in expert systems.
+\newblock \emph{Statistical science}, pages 219--247, 1993.
+
+\bibitem[Spirtes and Glymour(1991)]{spirtes1991algorithm}
+Peter Spirtes and Clark Glymour.
+\newblock An algorithm for fast recovery of sparse causal graphs.
+\newblock \emph{Social science computer review}, 9\penalty0 (1):\penalty0
+  62--72, 1991.
+
+\bibitem[Teyssier and Koller(2005)]{teyssier2005ordering}
+Marc Teyssier and Daphne Koller.
+\newblock Ordering-based search: a simple and effective algorithm for learning
+  bayesian networks.
+\newblock In \emph{Proceedings of the Twenty-First Conference on Uncertainty in
+  Artificial Intelligence}, pages 584--590, 2005.
+
+\bibitem[Webb et~al.(2005)Webb, Boughton, and Wang]{webb2005not}
+Geoffrey~I Webb, Janice~R Boughton, and Zhihai Wang.
+\newblock Not so naive bayes: aggregating one-dependence estimators.
+\newblock \emph{Machine learning}, 58\penalty0 (1):\penalty0 5--24, 2005.
+
+\bibitem[Ye et~al.(2020)Ye, Amini, and Zhou]{ye2020optimizing}
+Qiaoling Ye, Arash Amini, and Qing Zhou.
+\newblock Optimizing regularized cholesky score for order-based learning of
+  bayesian networks.
+\newblock \emph{IEEE transactions on pattern analysis and machine
+  intelligence}, 2020.
+
+\bibitem[Zaidi et~al.(2013)Zaidi, Cerquides, Carman, and
+  Webb]{zaidi2013alleviating}
+Nayyar~A Zaidi, Jes{\'u}s Cerquides, Mark~J Carman, and Geoffrey~I Webb.
+\newblock Alleviating naive bayes attribute independence assumption by
+  attribute weighting.
+\newblock \emph{The Journal of Machine Learning Research}, 14\penalty0
+  (1):\penalty0 1947--1988, 2013.
+
+\bibitem[Zhang(2004)]{zhang2004optimality}
+Harry Zhang.
+\newblock The optimality of naive bayes.
+\newblock \emph{AA}, 1\penalty0 (2):\penalty0 3, 2004.
+
+\bibitem[Zhang and Sheng(2004)]{zhang2004learning}
+Harry Zhang and Shengli Sheng.
+\newblock Learning weighted naive bayes with accurate ranking.
+\newblock In \emph{Fourth IEEE International Conference on Data Mining
+  (ICDM'04)}, pages 567--570. IEEE, 2004.
+
+\bibitem[Zhang and Fan(2008)]{zhang2008forecasting}
+Kun Zhang and Wei Fan.
+\newblock Forecasting skewed biased stochastic ozone days: analyses, solutions
+  and beyond.
+\newblock \emph{Knowledge and Information Systems}, 14\penalty0 (3):\penalty0
+  299--326, 2008.
+
+\bibitem[Zheng and Webb(2005)]{zheng2005comparative}
+Fei Zheng and Geoffrey~I Webb.
+\newblock A comparative study of semi-naive bayes methods in classification
+  learning.
+\newblock \emph{AUSDM05}, 2005.
+
+\bibitem[Zheng and Webb(2000)]{zheng2000lazy}
+Zijian Zheng and Geoffrey~I Webb.
+\newblock Lazy learning of bayesian rules.
+\newblock \emph{Machine Learning}, 41\penalty0 (1):\penalty0 53--84, 2000.
+
+\end{thebibliography}
