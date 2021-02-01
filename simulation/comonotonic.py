@@ -2,8 +2,8 @@ import numpy as np
 import pandas as pd
 import copy
 import operator
-import utils
-from utils import empty_intersection_correction
+import tool_box as tb
+from tool_box import empty_intersection_correction
 from sklearn.model_selection import train_test_split
 from sklearn.cluster import AgglomerativeClustering
 from sklearn.utils import resample
@@ -18,36 +18,16 @@ from pyitlib import discrete_random_variable as drv
 def single_norm_mutual_info(i,j,x,y):
     return i, j, normalized_mutual_info_score(x, y,average_method='arithmetic')
 
-# def get_norm_mutual_info(var_4_cluster):
-#     n_var = var_4_cluster.shape[1]
-#     result = np.zeros((n_var, n_var))
-#     for i in range(n_var):
-#         for j in range(i, n_var):
-#             if i == j:
-#                 result[i][j] = 1
-#             else:
-#                 result[i][j] = result[j][i] = normalized_mutual_info_score(var_4_cluster[:,i], 
-#                                                                            var_4_cluster[:,j], average_method='arithmetic')
-#     return result
-# just for producing results
 def get_norm_mutual_info(var_4_cluster):
     n_var = var_4_cluster.shape[1]
     result = np.zeros((n_var, n_var))
     for i in range(n_var):
-        for j in range(i,n_var):
+        for j in range(i, n_var):
             if i == j:
                 result[i][j] = 1
             else:
-                x = var_4_cluster[:,i]
-                y = var_4_cluster[:,j]
-                a = 0
-                b = 0
-                c = 0
-                for k in range(len(x)):
-                    a += x[k]*y[k]
-                    b += x[k]
-                    c += y[k]
-                result[i][j] = result[j][i] = a/len(x) - (b/len(x))*(c/len(x))
+                result[i][j] = result[j][i] = normalized_mutual_info_score(var_4_cluster[:,i], 
+                                                                           var_4_cluster[:,j], average_method='arithmetic')
     return result
 
 def get_CMI(var_4_cluster, y):
@@ -96,7 +76,7 @@ class clustered_comonotonic:
                     else:
                         cont_feature_val[i] = self.allocation_book[i]
             if self.discrete_feature_val != None:
-                self.feature_val = utils.merge_dict(cont_feature_val, self.discrete_feature_val)
+                self.feature_val = tb.merge_dict(cont_feature_val, self.discrete_feature_val)
             else: # all continuous 
                 self.feature_val = cont_feature_val.copy()  
             x_transpose = self.x_train.T.copy()
@@ -105,11 +85,11 @@ class clustered_comonotonic:
             for i, feature in enumerate(x_transpose):
                 if i in self.cont_col:
                     if self.discrete_method == 'auto':
-                        discretized, bins = utils.auto_discretize(feature)
+                        discretized, bins = tb.auto_discretize(feature)
                         discrete_x.append(discretized)
                         bin_info[i] = bins.copy()
                     else:
-                        discretized, bins = utils.custom_discretize(feature, self.allocation_book[i])
+                        discretized, bins = tb.custom_discretize(feature, self.allocation_book[i])
                         discrete_x.append(discretized)
                         bin_info[i] = bins.copy()
                 else:
@@ -129,7 +109,7 @@ class clustered_comonotonic:
                 if i in self.cont_col:
                     if min(training_copy.T[i]) == max(training_copy.T[i]): # if just one value after discretization use auto discretize instead
                         self.mixed_discrete = True
-                        discretized, bins = utils.auto_discretize(feature)
+                        discretized, bins = tb.auto_discretize(feature)
                         discrete_x.append(discretized)
                         bin_info[i] = bins.copy()
                     else:
@@ -147,7 +127,7 @@ class clustered_comonotonic:
 
     def construct_feature_val(self):
         if self.discrete_feature_val != None:
-            self.feature_val = utils.merge_dict(self.cont_feature_val, self.discrete_feature_val)
+            self.feature_val = tb.merge_dict(self.cont_feature_val, self.discrete_feature_val)
         else:
             self.feature_val = self.cont_feature_val.copy()
     
@@ -155,11 +135,8 @@ class clustered_comonotonic:
         # get the prior probability and indices of instances for different classes
         prior_prob = dict() # key is class, value is the prior probability of this class
         class_idx = dict() # key is class, value is a list containing the indices of instances for this class
-        for i in range(len(self.y_train)):
-            if self.y_train[i] not in class_idx.keys():
-                class_idx[self.y_train[i]] = [i]
-            else:
-                class_idx[self.y_train[i]].append(i)
+        for value in np.unique(self.y_train):
+            class_idx[value] = np.squeeze(np.where(self.y_train == value)).tolist()
         prior_prob = {k:len(v)/len(self.y_train) for k,v in class_idx.items()}
         self.prior_prob = prior_prob
         self.class_idx = class_idx
@@ -169,12 +146,10 @@ class clustered_comonotonic:
         for f in feature_list:
             feature_dict = dict()
             for c in self.class_idx.keys():
-                class_dict = dict()
-                for idx in self.class_idx[c]: # traverse the instances of this class
-                    if self.x_train[idx][f] not in class_dict.keys():
-                        class_dict[self.x_train[idx][f]] = 1
-                    else:
-                        class_dict[self.x_train[idx][f]] += 1
+                indices = self.class_idx[c]
+                sample_val = self.x_train[indices, f]
+                val_counting = np.unique(sample_val, return_counts = True)
+                class_dict = dict(zip(val_counting[0], val_counting[1]))
                 #laplacian correction
                 all_fv = [i for i in range(self.feature_val[f])]
                 for fv in all_fv:
@@ -246,30 +221,19 @@ class clustered_comonotonic:
             
             abs_corr = np.absolute(corr_matrix)
             distance_matrix = 1 - abs_corr
-            
-            try:
-                clusterer = AgglomerativeClustering(affinity='precomputed', linkage='average', 
-                                                    distance_threshold=1-self.min_corr, n_clusters=None)
-                clusterer.fit(distance_matrix)
-                adjusted_cluster_dict = dict()
-                for i,c in enumerate(clusterer.labels_):
-                    if c not in adjusted_cluster_dict.keys():
-                        adjusted_cluster_dict[c] = list()
-                    adjusted_cluster_dict[c].append(idx_4_cluster[i])
-                adjusted_cluster_book = list()
-                for k in adjusted_cluster_dict.keys():
-                    adjusted_cluster_book.append(adjusted_cluster_dict[k].copy())
-                self.cluster_book = adjusted_cluster_book
-                
-            except:
-                cluster_book = utils.cluster_agnes(distance_matrix, 1-self.min_corr)
-                adjusted_cluster_book = list()
-                for cluster in cluster_book:
-                    adjusted_cluster = list()
-                    for idx in cluster:
-                        adjusted_cluster.append(idx_4_cluster[idx])
-                    adjusted_cluster_book.append(adjusted_cluster)
-                self.cluster_book = adjusted_cluster_book
+
+            clusterer = AgglomerativeClustering(affinity='precomputed', linkage='average', 
+                                                distance_threshold=1-self.min_corr, n_clusters=None)
+            clusterer.fit(distance_matrix)
+            adjusted_cluster_dict = dict()
+            for i,c in enumerate(clusterer.labels_):
+                if c not in adjusted_cluster_dict.keys():
+                    adjusted_cluster_dict[c] = list()
+                adjusted_cluster_dict[c].append(idx_4_cluster[i])
+            adjusted_cluster_book = list()
+            for k in adjusted_cluster_dict.keys():
+                adjusted_cluster_book.append(adjusted_cluster_dict[k].copy())
+            self.cluster_book = adjusted_cluster_book
 
         # add clusters of categorical features
         if self.cate_clusters == None: # need to adjust self.unrankable
@@ -338,19 +302,43 @@ class clustered_comonotonic:
             #return 0.001
             return 0
     
-    def discretize_test(self,x_test):
-        a = list()
-        for x in x_test:
+    def get_prob_dist_single(self, x):
+        if len(self.cont_col) != 0:
+            # change x to categorical
             cate_x = list()
-            for i,f in enumerate(x):                    
-                cate_x.append(np.digitize(f,self.bin_info[i]))
-            a.append(cate_x)
-        return np.array(a)
-
-    def get_prob_dist_single(self, cate_x):
+            if self.discrete_method != 'mdlp':
+                for i,f in enumerate(x):
+                    if i in self.cont_col:
+                        cate_x.append(np.digitize(f,self.bin_info[i]))
+                    else:
+                        cate_x.append(f)
+            else:
+                x_copy = x.copy()
+                x_copy = np.array(x_copy).reshape(1,-1)
+                x_copy = self.transformer.transform(x_copy)
+                for i,f in enumerate(x):
+                    if self.mixed_discrete == False:
+                        if i in self.cont_col:
+                            cate_x.append(x_copy[0][i])
+                        else:
+                            cate_x.append(f)
+                    else:
+                        if (i in self.cont_col) and (i not in self.bin_info.keys()):
+                            cate_x.append(x_copy[0][i])
+                        elif (i in self.cont_col) and (i in self.bin_info.keys()):
+                            cate_x.append(np.digitize(f,self.bin_info[i]))
+                        else:
+                            cate_x.append(f)
+        else:
+            cate_x = x.copy()
         # get the probability distribution of one instance
         prob_distribution = self.prior_prob.copy() # initialize with prior probability
-
+        if self.unrankable != None:
+            for c in prob_distribution.keys():
+                for f in self.unrankable:
+                    fv = cate_x[f] # fv stands for feature value
+                    prob_distribution[c] *= self.unrankable_post_prob[f][c][fv]
+        backup_prob_dist = prob_distribution.copy()
         for c in prob_distribution.keys():
             for cluster in self.cluster_book:
                 if len(cluster) == 1:
@@ -378,9 +366,19 @@ class clustered_comonotonic:
                     else:
                         prob_distribution[c] *= 0.001
                         #prob_distribution[c] *= empty_intersection_correction(intervals)
-
-        return max(prob_distribution.items(), key=operator.itemgetter(1))[0]
-
+        checker = sum(list(prob_distribution.values()))
+        if checker == 0:
+            summation = sum(list(backup_prob_dist.values()))
+            final_distribution = {}
+            for k in backup_prob_dist.keys():
+                final_distribution[k] = backup_prob_dist[k]/summation 
+            return final_distribution
+        else:
+            summation = sum(list(prob_distribution.values()))
+            final_distribution = {}
+            for k in prob_distribution.keys():
+                final_distribution[k] = prob_distribution[k]/summation
+            return final_distribution
         
     def predict_proba(self, x_test):
         y_predict = list()
@@ -392,12 +390,13 @@ class clustered_comonotonic:
     def predict(self, x_test):
         y_predict = list()
         for x in x_test:
-            predicted_class = self.get_prob_dist_single(x)
+            prob_dist = self.get_prob_dist_single(x)
+            predicted_class = max(prob_dist.items(), key=operator.itemgetter(1))[0]
             y_predict.append(predicted_class)
         return y_predict
     
     def print_cluster(self):
-        print(self.cluster_book)
+        return self.cluster_book
 
     def cross_entropy_loss(self, x_val, y_val): # x_val is np 2d array
         loss = 0
