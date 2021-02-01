@@ -2,8 +2,8 @@ import numpy as np
 import pandas as pd
 import copy
 import operator
-import utils
-from utils import empty_intersection_correction
+import tool_box as tb
+from tool_box import empty_intersection_correction
 from sklearn.model_selection import train_test_split
 from sklearn.cluster import AgglomerativeClustering
 from sklearn.utils import resample
@@ -76,7 +76,7 @@ class clustered_comonotonic:
                     else:
                         cont_feature_val[i] = self.allocation_book[i]
             if self.discrete_feature_val != None:
-                self.feature_val = utils.merge_dict(cont_feature_val, self.discrete_feature_val)
+                self.feature_val = tb.merge_dict(cont_feature_val, self.discrete_feature_val)
             else: # all continuous 
                 self.feature_val = cont_feature_val.copy()  
             x_transpose = self.x_train.T.copy()
@@ -85,11 +85,11 @@ class clustered_comonotonic:
             for i, feature in enumerate(x_transpose):
                 if i in self.cont_col:
                     if self.discrete_method == 'auto':
-                        discretized, bins = utils.auto_discretize(feature)
+                        discretized, bins = tb.auto_discretize(feature)
                         discrete_x.append(discretized)
                         bin_info[i] = bins.copy()
                     else:
-                        discretized, bins = utils.custom_discretize(feature, self.allocation_book[i])
+                        discretized, bins = tb.custom_discretize(feature, self.allocation_book[i])
                         discrete_x.append(discretized)
                         bin_info[i] = bins.copy()
                 else:
@@ -109,7 +109,7 @@ class clustered_comonotonic:
                 if i in self.cont_col:
                     if min(training_copy.T[i]) == max(training_copy.T[i]): # if just one value after discretization use auto discretize instead
                         self.mixed_discrete = True
-                        discretized, bins = utils.auto_discretize(feature)
+                        discretized, bins = tb.auto_discretize(feature)
                         discrete_x.append(discretized)
                         bin_info[i] = bins.copy()
                     else:
@@ -127,7 +127,7 @@ class clustered_comonotonic:
 
     def construct_feature_val(self):
         if self.discrete_feature_val != None:
-            self.feature_val = utils.merge_dict(self.cont_feature_val, self.discrete_feature_val)
+            self.feature_val = tb.merge_dict(self.cont_feature_val, self.discrete_feature_val)
         else:
             self.feature_val = self.cont_feature_val.copy()
     
