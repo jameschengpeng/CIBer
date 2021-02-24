@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  23 FEB 2021 22:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  24 FEB 2021 10:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -464,7 +464,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
                                                   \fi \fi 
 l.497 \begin{displaymath}
                          ] [18] [19]
-<Figures/simulation/example.png, id=466, 433.62pt x 289.08pt>
+<Figures/simulation/example.png, id=465, 433.62pt x 289.08pt>
 File: Figures/simulation/example.png Graphic file (type png)
 <use Figures/simulation/example.png>
 Package pdftex.def Info: Figures/simulation/example.png  used on input line 554
@@ -477,7 +477,7 @@ Package pdftex.def Info: Figures/simulation/example.png  used on input line 554
                                                   \fi \fi 
 l.560 \begin{enumerate}
                         <./Figures/simulation/example.png>] [21]
-<Figures/simulation/With discretization.png, id=483, 867.24pt x 433.62pt>
+<Figures/simulation/With discretization.png, id=482, 867.24pt x 433.62pt>
 File: Figures/simulation/With discretization.png Graphic file (type png)
 <use Figures/simulation/With discretization.png>
 Package pdftex.def Info: Figures/simulation/With discretization.png  used on in
@@ -489,7 +489,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 647--648
  []
 
 [22]
-<Figures/simulation/sufficiently small discrete.png, id=490, 433.62pt x 289.08p
+<Figures/simulation/sufficiently small discrete.png, id=489, 433.62pt x 289.08p
 t>
 File: Figures/simulation/sufficiently small discrete.png Graphic file (type png
 )
@@ -507,13 +507,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
                                                   \fi \fi 
 l.668 
        <./Figures/simulation/With discretization.png>]
-<Figures/simulation/training.png, id=498, 440.1243pt x 332.80334pt>
+<Figures/simulation/training.png, id=497, 440.1243pt x 332.80334pt>
 File: Figures/simulation/training.png Graphic file (type png)
 <use Figures/simulation/training.png>
 Package pdftex.def Info: Figures/simulation/training.png  used on input line 68
 6.
 (pdftex.def)             Requested size: 176.04659pt x 133.11897pt.
-<Figures/simulation/testing.png, id=499, 443.0151pt x 332.80334pt>
+<Figures/simulation/testing.png, id=498, 443.0151pt x 332.80334pt>
 File: Figures/simulation/testing.png Graphic file (type png)
 <use Figures/simulation/testing.png>
 Package pdftex.def Info: Figures/simulation/testing.png  used on input line 688
@@ -539,13 +539,13 @@ l.698 S
 l.703 
        <./Figures/simulation/training.png> <./Figures/simulation/testing.png>]
 [26] [27]
-<Figures/Empirical/err_change_ozone_1.png, id=539, 586.8324pt x 367.1316pt>
+<Figures/Empirical/err_change_ozone_1.png, id=538, 586.8324pt x 367.1316pt>
 File: Figures/Empirical/err_change_ozone_1.png Graphic file (type png)
 <use Figures/Empirical/err_change_ozone_1.png>
 Package pdftex.def Info: Figures/Empirical/err_change_ozone_1.png  used on inpu
 t line 734.
 (pdftex.def)             Requested size: 216.81pt x 135.63489pt.
-<Figures/Empirical/err_change_ozone_2.png, id=540, 607.42935pt x 367.1316pt>
+<Figures/Empirical/err_change_ozone_2.png, id=539, 607.42935pt x 367.1316pt>
 File: Figures/Empirical/err_change_ozone_2.png Graphic file (type png)
 <use Figures/Empirical/err_change_ozone_2.png>
 Package pdftex.def Info: Figures/Empirical/err_change_ozone_2.png  used on inpu
@@ -564,14 +564,14 @@ Overfull \hbox (24.00003pt too wide) in paragraph at lines 733--738
 l.748 
        <./Figures/Empirical/err_change_ozone_1.png> <./Figures/Empirical/err_ch
 ange_ozone_2.png>]
-<Figures/Empirical/err_change_sensorless_1.png, id=549, 586.8324pt x 367.1316pt
+<Figures/Empirical/err_change_sensorless_1.png, id=548, 586.8324pt x 367.1316pt
 >
 File: Figures/Empirical/err_change_sensorless_1.png Graphic file (type png)
 <use Figures/Empirical/err_change_sensorless_1.png>
 Package pdftex.def Info: Figures/Empirical/err_change_sensorless_1.png  used on
  input line 751.
 (pdftex.def)             Requested size: 216.81pt x 135.63489pt.
-<Figures/Empirical/err_change_sensorless_2.png, id=550, 607.42935pt x 367.1316p
+<Figures/Empirical/err_change_sensorless_2.png, id=549, 607.42935pt x 367.1316p
 t>
 File: Figures/Empirical/err_change_sensorless_2.png Graphic file (type png)
 <use Figures/Empirical/err_change_sensorless_2.png>
@@ -583,25 +583,25 @@ Overfull \hbox (24.00003pt too wide) in paragraph at lines 750--755
 [][]
  []
 
-<Figures/Empirical/err_change_oil_1.png, id=552, 572.3784pt x 367.1316pt>
+<Figures/Empirical/err_change_oil_1.png, id=551, 572.3784pt x 367.1316pt>
 File: Figures/Empirical/err_change_oil_1.png Graphic file (type png)
 <use Figures/Empirical/err_change_oil_1.png>
 Package pdftex.def Info: Figures/Empirical/err_change_oil_1.png  used on input 
 line 767.
 (pdftex.def)             Requested size: 184.28981pt x 118.20155pt.
-<Figures/Empirical/err_change_oil_2.png, id=553, 607.42935pt x 367.1316pt>
+<Figures/Empirical/err_change_oil_2.png, id=552, 607.42935pt x 367.1316pt>
 File: Figures/Empirical/err_change_oil_2.png Graphic file (type png)
 <use Figures/Empirical/err_change_oil_2.png>
 Package pdftex.def Info: Figures/Empirical/err_change_oil_2.png  used on input 
 line 771.
 (pdftex.def)             Requested size: 195.12767pt x 117.93266pt.
-<Figures/Empirical/err_change_oil_xgb.png, id=554, 553.22685pt x 367.1316pt>
+<Figures/Empirical/err_change_oil_xgb.png, id=553, 553.22685pt x 367.1316pt>
 File: Figures/Empirical/err_change_oil_xgb.png Graphic file (type png)
 <use Figures/Empirical/err_change_oil_xgb.png>
 Package pdftex.def Info: Figures/Empirical/err_change_oil_xgb.png  used on inpu
 t line 775.
 (pdftex.def)             Requested size: 184.28981pt x 122.2966pt.
-<Figures/Empirical/err_change_oil_rf.png, id=555, 586.8324pt x 367.1316pt>
+<Figures/Empirical/err_change_oil_rf.png, id=554, 586.8324pt x 367.1316pt>
 File: Figures/Empirical/err_change_oil_rf.png Graphic file (type png)
 <use Figures/Empirical/err_change_oil_rf.png>
 Package pdftex.def Info: Figures/Empirical/err_change_oil_rf.png  used on input
@@ -625,25 +625,25 @@ Overfull \hbox (2.43333pt too wide) in paragraph at lines 765--781
 l.786 
        <./Figures/Empirical/err_change_sensorless_1.png> <./Figures/Empirical/e
 rr_change_sensorless_2.png>]
-<Figures/Empirical/err_change_glass_1.png, id=565, 572.3784pt x 367.1316pt>
+<Figures/Empirical/err_change_glass_1.png, id=564, 572.3784pt x 367.1316pt>
 File: Figures/Empirical/err_change_glass_1.png Graphic file (type png)
 <use Figures/Empirical/err_change_glass_1.png>
 Package pdftex.def Info: Figures/Empirical/err_change_glass_1.png  used on inpu
 t line 794.
 (pdftex.def)             Requested size: 184.28981pt x 118.20155pt.
-<Figures/Empirical/err_change_glass_2.png, id=566, 607.42935pt x 367.1316pt>
+<Figures/Empirical/err_change_glass_2.png, id=565, 607.42935pt x 367.1316pt>
 File: Figures/Empirical/err_change_glass_2.png Graphic file (type png)
 <use Figures/Empirical/err_change_glass_2.png>
 Package pdftex.def Info: Figures/Empirical/err_change_glass_2.png  used on inpu
 t line 798.
 (pdftex.def)             Requested size: 195.12767pt x 117.93266pt.
-<Figures/Empirical/err_change_glass_xgb.png, id=567, 553.22685pt x 367.1316pt>
+<Figures/Empirical/err_change_glass_xgb.png, id=566, 553.22685pt x 367.1316pt>
 File: Figures/Empirical/err_change_glass_xgb.png Graphic file (type png)
 <use Figures/Empirical/err_change_glass_xgb.png>
 Package pdftex.def Info: Figures/Empirical/err_change_glass_xgb.png  used on in
 put line 802.
 (pdftex.def)             Requested size: 184.28981pt x 122.2966pt.
-<Figures/Empirical/err_change_glass_rf.png, id=568, 586.8324pt x 367.1316pt>
+<Figures/Empirical/err_change_glass_rf.png, id=567, 586.8324pt x 367.1316pt>
 File: Figures/Empirical/err_change_glass_rf.png Graphic file (type png)
 <use Figures/Empirical/err_change_glass_rf.png>
 Package pdftex.def Info: Figures/Empirical/err_change_glass_rf.png  used on inp
@@ -682,7 +682,7 @@ l.844
        <./Figures/Empirical/err_change_glass_1.png> <./Figures/Empirical/err_ch
 ange_glass_2.png> <./Figures/Empirical/err_change_glass_xgb.png> <./Figures/Emp
 irical/err_change_glass_rf.png>]
-<Figures/Empirical/cluster size5.png, id=592, 997.326pt x 891.8118pt>
+<Figures/Empirical/cluster size5.png, id=591, 997.326pt x 891.8118pt>
 File: Figures/Empirical/cluster size5.png Graphic file (type png)
 <use Figures/Empirical/cluster size5.png>
 Package pdftex.def Info: Figures/Empirical/cluster size5.png  used on input lin
@@ -710,19 +710,19 @@ tifier (name{figure.9}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.881 \begin{itemize}
                       <./Figures/Empirical/cluster size5.png>]
-<Figures/Empirical/cluster size3.png, id=610, 620.7993pt x 530.4618pt>
+<Figures/Empirical/cluster size3.png, id=609, 620.7993pt x 530.4618pt>
 File: Figures/Empirical/cluster size3.png Graphic file (type png)
 <use Figures/Empirical/cluster size3.png>
 Package pdftex.def Info: Figures/Empirical/cluster size3.png  used on input lin
 e 889.
 (pdftex.def)             Requested size: 248.31532pt x 212.18095pt.
-<Figures/Empirical/cluster size1_1.png, id=611, 435.7881pt x 349.7868pt>
+<Figures/Empirical/cluster size1_1.png, id=610, 435.7881pt x 349.7868pt>
 File: Figures/Empirical/cluster size1_1.png Graphic file (type png)
 <use Figures/Empirical/cluster size1_1.png>
 Package pdftex.def Info: Figures/Empirical/cluster size1_1.png  used on input l
 ine 896.
 (pdftex.def)             Requested size: 217.89351pt x 174.89297pt.
-<Figures/Empirical/cluster size1_2.png, id=612, 420.97275pt x 349.7868pt>
+<Figures/Empirical/cluster size1_2.png, id=611, 420.97275pt x 349.7868pt>
 File: Figures/Empirical/cluster size1_2.png Graphic file (type png)
 <use Figures/Empirical/cluster size1_2.png>
 Package pdftex.def Info: Figures/Empirical/cluster size1_2.png  used on input l
@@ -801,10 +801,10 @@ e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2020/
 texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2
 020/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on main.pdf (39 pages, 4201141 bytes).
+Output written on main.pdf (39 pages, 4201343 bytes).
 PDF statistics:
- 744 PDF objects out of 1000 (max. 8388607)
- 636 compressed objects within 7 object streams
+ 743 PDF objects out of 1000 (max. 8388607)
+ 635 compressed objects within 7 object streams
  161 named destinations out of 1000 (max. 500000)
  346 words of extra memory for PDF output out of 10000 (max. 10000000)
 

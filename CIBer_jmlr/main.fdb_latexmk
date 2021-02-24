@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex main"] 1614135869 "main.aux" "main.bbl" "main" 1614135869
+["bibtex main"] 1614179524 "main.aux" "main.bbl" "main" 1614179524
   "/usr/local/texlive/2020/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
   "/usr/local/texlive/2020/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1233624470 26816 ffe5423d2019860bad9f54bc402fac15 ""
-  "main.aux" 1614135868 13675 e41d269ca88e0c82be3fbc37a891a4f4 "pdflatex"
+  "main.aux" 1614179524 13675 e41d269ca88e0c82be3fbc37a891a4f4 "pdflatex"
   "ref.bib" 1611542658 14077 6584cf8375dc29c1cb6447a4461071fa ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1614135864 "/Users/chengpeng/Desktop/Research/STAT/CIBer/CIBer_jmlr/main.tex" "/Users/chengpeng/Desktop/Research/STAT/CIBer/CIBer_jmlr/main.pdf" "main" 1614135864
-  "/Users/chengpeng/Desktop/Research/STAT/CIBer/CIBer_jmlr/main.aux" 1614135864 8 a94a2480d3289e625eea47cd1b285758 ""
-  "/Users/chengpeng/Desktop/Research/STAT/CIBer/CIBer_jmlr/main.tex" 1614135863 104537 7f91536cdd00553bd5ad193ed0e30145 ""
+["pdflatex"] 1614179519 "/Users/chengpeng/Desktop/Research/STAT/CIBer/CIBer_jmlr/main.tex" "/Users/chengpeng/Desktop/Research/STAT/CIBer/CIBer_jmlr/main.pdf" "main" 1614179519
+  "/Users/chengpeng/Desktop/Research/STAT/CIBer/CIBer_jmlr/main.aux" 1614179519 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/Users/chengpeng/Desktop/Research/STAT/CIBer/CIBer_jmlr/main.tex" 1614179517 104793 c64f06038c26a94fe14579dd788b5fb5 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1136768653 1536 02c06700a42be0f5a28664c7273f82e7 ""
@@ -139,11 +139,11 @@
   "main.aux" 0 -1 0 "pdflatex"
   "main.bbl" 0 -1 0 "bibtex main"
   "main.out" 0 -1 0 "pdflatex"
-  "main.tex" 1614135863 104537 7f91536cdd00553bd5ad193ed0e30145 ""
+  "main.tex" 1614179517 104793 c64f06038c26a94fe14579dd788b5fb5 ""
   (generated)
+  "main.aux"
+  "main.log"
   "main.out"
   "/Users/chengpeng/Desktop/Research/STAT/CIBer/CIBer_jmlr/main.pdf"
-  "/Users/chengpeng/Desktop/Research/STAT/CIBer/CIBer_jmlr/main.log"
-  "main.aux"
   "main.pdf"
-  "main.log"
+  "/Users/chengpeng/Desktop/Research/STAT/CIBer/CIBer_jmlr/main.log"
