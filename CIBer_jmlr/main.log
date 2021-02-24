@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  24 JAN 2021 21:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  23 FEB 2021 22:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -308,22 +308,22 @@ LaTeX Warning: Label `cond_como' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
  (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count276
@@ -347,7 +347,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box51
-Package hyperref Info: Link coloring OFF on input line 78.
+Package hyperref Info: Link coloring OFF on input line 79.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -361,20 +361,20 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count282
 )
-LaTeX Info: Redefining \ref on input line 78.
-LaTeX Info: Redefining \pageref on input line 78.
-LaTeX Info: Redefining \nameref on input line 78.
+LaTeX Info: Redefining \ref on input line 79.
+LaTeX Info: Redefining \pageref on input line 79.
+LaTeX Info: Redefining \nameref on input line 79.
  (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 112
+LaTeX Font Info:    Trying to load font information for U+msa on input line 113
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 112
+LaTeX Font Info:    Trying to load font information for U+msb on input line 113
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -392,14 +392,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [7]
 
 Package natbib Warning: Citation `dhaene2002concept' on page 8 undefined on inp
-ut line 225.
+ut line 226.
 
 
 Package natbib Warning: Citation `dhaene2002concept' on page 8 undefined on inp
-ut line 225.
+ut line 226.
 
 [8]
-Overfull \hbox (38.38115pt too wide) in paragraph at lines 258--259
+Overfull \hbox (38.38115pt too wide) in paragraph at lines 259--260
 []\OT1/cmr/m/it/10.95 There ex-ists a ran-dom vari-able $\OML/cmm/m/it/10.95 W$
  \OT1/cmr/m/it/10.95 and in-creas-ing func-tions $\OML/cmm/m/it/10.95 h[]; [] ;
  h[]$ \OT1/cmr/m/it/10.95 such that $\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 X[
@@ -407,7 +407,7 @@ Overfull \hbox (38.38115pt too wide) in paragraph at lines 258--259
  []
 
 [9]
-Overfull \hbox (17.30782pt too wide) in paragraph at lines 285--286
+Overfull \hbox (17.30782pt too wide) in paragraph at lines 286--287
 \OT1/cmr/m/n/10.95 i.e., $(\OML/cmm/m/it/10.95 X[]; [] ; X[]\OT1/cmr/m/n/10.95 
 )$ is comono-tonic $\OMS/cmsy/m/n/10.95 ,$ \OT1/cmr/m/n/10.95 for any $\OML/cmm
 /m/it/10.95 U \OMS/cmsy/m/n/10.95 ^^X \OML/cmm/m/it/10.95 U\OT1/cmr/m/n/10.95 (
@@ -421,13 +421,13 @@ X[]\OT1/cmr/m/n/10.95 ) [] (\OML/cmm/m/it/10.95 F[]\OT1/cmr/m/n/10.95 (\OML/cmm
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 387.
+(amsmath)                 on input line 388.
 
 [14]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 408.
+put line 409.
 
-Overfull \hbox (40.51384pt too wide) in paragraph at lines 429--430
+Overfull \hbox (40.51384pt too wide) in paragraph at lines 430--431
 \OT1/cmr/m/it/10.95 With-out the loss of gen-er-al-ity, as-sume the clus-ters a
 re $\OT1/cmr/bx/n/10.95 X[] \OT1/cmr/m/n/10.95 = (\OML/cmm/m/it/10.95 X[]; [] ;
  X[]\OT1/cmr/m/n/10.95 )$\OT1/cmr/m/it/10.95 , $\OT1/cmr/bx/n/10.95 X[] \OT1/cm
@@ -437,22 +437,22 @@ r/m/n/10.95 = (\OML/cmm/m/it/10.95 X[]; [] ; X[]\OT1/cmr/m/n/10.95 )$\OT1/cmr/m
 
 [15]
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 452.
+LaTeX Warning: Command \textendash invalid in math mode on input line 453.
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 454.
+LaTeX Warning: Command \textendash invalid in math mode on input line 455.
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 454.
+LaTeX Warning: Command \textendash invalid in math mode on input line 455.
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 456.
+LaTeX Warning: Command \textendash invalid in math mode on input line 457.
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 456.
+LaTeX Warning: Command \textendash invalid in math mode on input line 457.
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 458.
+LaTeX Warning: Command \textendash invalid in math mode on input line 459.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -462,12 +462,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.496 \begin{displaymath}
+l.497 \begin{displaymath}
                          ] [18] [19]
 <Figures/simulation/example.png, id=466, 433.62pt x 289.08pt>
 File: Figures/simulation/example.png Graphic file (type png)
 <use Figures/simulation/example.png>
-Package pdftex.def Info: Figures/simulation/example.png  used on input line 553
+Package pdftex.def Info: Figures/simulation/example.png  used on input line 554
 .
 (pdftex.def)             Requested size: 303.53192pt x 202.35461pt.
  [20pdfTeX warning (ext4): destination with the same identifier (name{figure.1}
@@ -475,16 +475,16 @@ Package pdftex.def Info: Figures/simulation/example.png  used on input line 553
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.564 \begin{itemize}
-                      <./Figures/simulation/example.png>] [21]
+l.560 \begin{enumerate}
+                        <./Figures/simulation/example.png>] [21]
 <Figures/simulation/With discretization.png, id=483, 867.24pt x 433.62pt>
 File: Figures/simulation/With discretization.png Graphic file (type png)
 <use Figures/simulation/With discretization.png>
 Package pdftex.def Info: Figures/simulation/With discretization.png  used on in
-put line 646.
+put line 647.
 (pdftex.def)             Requested size: 433.61894pt x 216.80946pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 646--647
+Underfull \hbox (badness 10000) in paragraph at lines 647--648
 [][]
  []
 
@@ -495,7 +495,7 @@ File: Figures/simulation/sufficiently small discrete.png Graphic file (type png
 )
 <use Figures/simulation/sufficiently small discrete.png>
 Package pdftex.def Info: Figures/simulation/sufficiently small discrete.png  us
-ed on input line 658.
+ed on input line 659.
 (pdftex.def)             Requested size: 303.53192pt x 202.35461pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -505,19 +505,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.671     \item C
-                 lass $0$: $X_{2i} = X_{2i-1}+20$ and $X_{2i-1}\sim U(0,100)...
- <./Figures/simulation/With discretization.png>]
+l.668 
+       <./Figures/simulation/With discretization.png>]
 <Figures/simulation/training.png, id=498, 440.1243pt x 332.80334pt>
 File: Figures/simulation/training.png Graphic file (type png)
 <use Figures/simulation/training.png>
 Package pdftex.def Info: Figures/simulation/training.png  used on input line 68
-5.
+6.
 (pdftex.def)             Requested size: 176.04659pt x 133.11897pt.
 <Figures/simulation/testing.png, id=499, 443.0151pt x 332.80334pt>
 File: Figures/simulation/testing.png Graphic file (type png)
 <use Figures/simulation/testing.png>
-Package pdftex.def Info: Figures/simulation/testing.png  used on input line 687
+Package pdftex.def Info: Figures/simulation/testing.png  used on input line 688
 .
 (pdftex.def)             Requested size: 177.2029pt x 133.11897pt.
 
@@ -529,103 +528,92 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.698 
-       <./Figures/simulation/sufficiently small discrete.png>]
-Underfull \vbox (badness 4899) has occurred while \output is active []
-
- [25pdfTeX warning (ext4): destination with the same identifier (name{figure.4}
-) has been already used, duplicate ignored
+l.698 S
+       uppose our data-set has $d$ predictive features, and the average size...
+ <./Figures/simulation/sufficiently small discrete.png>] [25pdfTeX warning (ext
+4): destination with the same identifier (name{figure.4}) has been already used
+, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.702 
+l.703 
        <./Figures/simulation/training.png> <./Figures/simulation/testing.png>]
-[26]
-<Figures/Empirical/err_change_ozone_1.png, id=532, 586.8324pt x 367.1316pt>
+[26] [27]
+<Figures/Empirical/err_change_ozone_1.png, id=539, 586.8324pt x 367.1316pt>
 File: Figures/Empirical/err_change_ozone_1.png Graphic file (type png)
 <use Figures/Empirical/err_change_ozone_1.png>
 Package pdftex.def Info: Figures/Empirical/err_change_ozone_1.png  used on inpu
-t line 733.
+t line 734.
 (pdftex.def)             Requested size: 216.81pt x 135.63489pt.
-<Figures/Empirical/err_change_ozone_2.png, id=533, 607.42935pt x 367.1316pt>
+<Figures/Empirical/err_change_ozone_2.png, id=540, 607.42935pt x 367.1316pt>
 File: Figures/Empirical/err_change_ozone_2.png Graphic file (type png)
 <use Figures/Empirical/err_change_ozone_2.png>
 Package pdftex.def Info: Figures/Empirical/err_change_ozone_2.png  used on inpu
-t line 735.
+t line 736.
 (pdftex.def)             Requested size: 216.81pt x 131.04128pt.
 
-Overfull \hbox (24.00003pt too wide) in paragraph at lines 732--737
+Overfull \hbox (24.00003pt too wide) in paragraph at lines 733--738
 [][]
  []
 
+[28pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
+ has been already used, duplicate ignored
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 3492) has occurred while \output is active []
-
- [27]
-<Figures/Empirical/err_change_sensorless_1.png, id=543, 586.8324pt x 367.1316pt
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.748 
+       <./Figures/Empirical/err_change_ozone_1.png> <./Figures/Empirical/err_ch
+ange_ozone_2.png>]
+<Figures/Empirical/err_change_sensorless_1.png, id=549, 586.8324pt x 367.1316pt
 >
 File: Figures/Empirical/err_change_sensorless_1.png Graphic file (type png)
 <use Figures/Empirical/err_change_sensorless_1.png>
 Package pdftex.def Info: Figures/Empirical/err_change_sensorless_1.png  used on
- input line 750.
+ input line 751.
 (pdftex.def)             Requested size: 216.81pt x 135.63489pt.
-<Figures/Empirical/err_change_sensorless_2.png, id=544, 607.42935pt x 367.1316p
+<Figures/Empirical/err_change_sensorless_2.png, id=550, 607.42935pt x 367.1316p
 t>
 File: Figures/Empirical/err_change_sensorless_2.png Graphic file (type png)
 <use Figures/Empirical/err_change_sensorless_2.png>
 Package pdftex.def Info: Figures/Empirical/err_change_sensorless_2.png  used on
- input line 752.
+ input line 753.
 (pdftex.def)             Requested size: 216.81pt x 131.04128pt.
 
-Overfull \hbox (24.00003pt too wide) in paragraph at lines 749--754
+Overfull \hbox (24.00003pt too wide) in paragraph at lines 750--755
 [][]
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [28pdfTeX warning (ext4): destination with the same identifier (name{figure.5}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.756 \end{figure}
-                   <./Figures/Empirical/err_change_ozone_1.png> <./Figures/Empi
-rical/err_change_ozone_2.png>]
 <Figures/Empirical/err_change_oil_1.png, id=552, 572.3784pt x 367.1316pt>
 File: Figures/Empirical/err_change_oil_1.png Graphic file (type png)
 <use Figures/Empirical/err_change_oil_1.png>
 Package pdftex.def Info: Figures/Empirical/err_change_oil_1.png  used on input 
-line 766.
+line 767.
 (pdftex.def)             Requested size: 184.28981pt x 118.20155pt.
 <Figures/Empirical/err_change_oil_2.png, id=553, 607.42935pt x 367.1316pt>
 File: Figures/Empirical/err_change_oil_2.png Graphic file (type png)
 <use Figures/Empirical/err_change_oil_2.png>
 Package pdftex.def Info: Figures/Empirical/err_change_oil_2.png  used on input 
-line 770.
+line 771.
 (pdftex.def)             Requested size: 195.12767pt x 117.93266pt.
 <Figures/Empirical/err_change_oil_xgb.png, id=554, 553.22685pt x 367.1316pt>
 File: Figures/Empirical/err_change_oil_xgb.png Graphic file (type png)
 <use Figures/Empirical/err_change_oil_xgb.png>
 Package pdftex.def Info: Figures/Empirical/err_change_oil_xgb.png  used on inpu
-t line 774.
+t line 775.
 (pdftex.def)             Requested size: 184.28981pt x 122.2966pt.
 <Figures/Empirical/err_change_oil_rf.png, id=555, 586.8324pt x 367.1316pt>
 File: Figures/Empirical/err_change_oil_rf.png Graphic file (type png)
 <use Figures/Empirical/err_change_oil_rf.png>
 Package pdftex.def Info: Figures/Empirical/err_change_oil_rf.png  used on input
- line 778.
+ line 779.
 (pdftex.def)             Requested size: 195.12767pt x 122.07251pt.
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 764--780
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 765--781
 [][] []
  []
 
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 764--780
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 765--781
 [] []
  []
 
@@ -634,40 +622,40 @@ Overfull \hbox (2.43333pt too wide) in paragraph at lines 764--780
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.787 \subsubsection
-                    {Glass Identification Data-set} <./Figures/Empirical/err_ch
-ange_sensorless_1.png> <./Figures/Empirical/err_change_sensorless_2.png>]
+l.786 
+       <./Figures/Empirical/err_change_sensorless_1.png> <./Figures/Empirical/e
+rr_change_sensorless_2.png>]
 <Figures/Empirical/err_change_glass_1.png, id=565, 572.3784pt x 367.1316pt>
 File: Figures/Empirical/err_change_glass_1.png Graphic file (type png)
 <use Figures/Empirical/err_change_glass_1.png>
 Package pdftex.def Info: Figures/Empirical/err_change_glass_1.png  used on inpu
-t line 793.
+t line 794.
 (pdftex.def)             Requested size: 184.28981pt x 118.20155pt.
 <Figures/Empirical/err_change_glass_2.png, id=566, 607.42935pt x 367.1316pt>
 File: Figures/Empirical/err_change_glass_2.png Graphic file (type png)
 <use Figures/Empirical/err_change_glass_2.png>
 Package pdftex.def Info: Figures/Empirical/err_change_glass_2.png  used on inpu
-t line 797.
+t line 798.
 (pdftex.def)             Requested size: 195.12767pt x 117.93266pt.
 <Figures/Empirical/err_change_glass_xgb.png, id=567, 553.22685pt x 367.1316pt>
 File: Figures/Empirical/err_change_glass_xgb.png Graphic file (type png)
 <use Figures/Empirical/err_change_glass_xgb.png>
 Package pdftex.def Info: Figures/Empirical/err_change_glass_xgb.png  used on in
-put line 801.
+put line 802.
 (pdftex.def)             Requested size: 184.28981pt x 122.2966pt.
 <Figures/Empirical/err_change_glass_rf.png, id=568, 586.8324pt x 367.1316pt>
 File: Figures/Empirical/err_change_glass_rf.png Graphic file (type png)
 <use Figures/Empirical/err_change_glass_rf.png>
 Package pdftex.def Info: Figures/Empirical/err_change_glass_rf.png  used on inp
-ut line 805.
+ut line 806.
 (pdftex.def)             Requested size: 195.12767pt x 122.07251pt.
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 791--807
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 792--808
 [][] []
  []
 
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 791--807
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 792--808
 [] []
  []
 
@@ -679,7 +667,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.816 
+l.813 
        <./Figures/Empirical/err_change_oil_1.png> <./Figures/Empirical/err_chan
 ge_oil_2.png> <./Figures/Empirical/err_change_oil_xgb.png> <./Figures/Empirical
 /err_change_oil_rf.png>]
@@ -690,109 +678,101 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.868 \end{table}
-                  <./Figures/Empirical/err_change_glass_1.png> <./Figures/Empir
-ical/err_change_glass_2.png> <./Figures/Empirical/err_change_glass_xgb.png> <./
-Figures/Empirical/err_change_glass_rf.png>]
+l.844 
+       <./Figures/Empirical/err_change_glass_1.png> <./Figures/Empirical/err_ch
+ange_glass_2.png> <./Figures/Empirical/err_change_glass_xgb.png> <./Figures/Emp
+irical/err_change_glass_rf.png>]
 <Figures/Empirical/cluster size5.png, id=592, 997.326pt x 891.8118pt>
 File: Figures/Empirical/cluster size5.png Graphic file (type png)
 <use Figures/Empirical/cluster size5.png>
 Package pdftex.def Info: Figures/Empirical/cluster size5.png  used on input lin
-e 874.
+e 875.
 (pdftex.def)             Requested size: 398.92334pt x 356.7184pt.
 
-Underfull \vbox (badness 3838) has occurred while \output is active []
+Underfull \vbox (badness 1057) has occurred while \output is active []
 
  [32pdfTeX warning (ext4): destination with the same identifier (name{table.2})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.881     \item T
-                 he two features are comonotonic.pdfTeX warning (ext4): destina
-tion with the same identifier (name{table.3}) has been already used, duplicate 
-ignored
+l.881 \begin{itemize}
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{table.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.881     \item T
-                 he two features are comonotonic.] [33pdfTeX warning (ext4): de
-stination with the same identifier (name{figure.9}) has been already used, dupl
-icate ignored
+l.881 \begin{itemize}
+                     ] [33pdfTeX warning (ext4): destination with the same iden
+tifier (name{figure.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.881     \item T
-                 he two features are comonotonic. <./Figures/Empirical/cluster 
-size5.png>]
-<Figures/Empirical/cluster size3.png, id=611, 620.7993pt x 530.4618pt>
+l.881 \begin{itemize}
+                      <./Figures/Empirical/cluster size5.png>]
+<Figures/Empirical/cluster size3.png, id=610, 620.7993pt x 530.4618pt>
 File: Figures/Empirical/cluster size3.png Graphic file (type png)
 <use Figures/Empirical/cluster size3.png>
 Package pdftex.def Info: Figures/Empirical/cluster size3.png  used on input lin
-e 888.
+e 889.
 (pdftex.def)             Requested size: 248.31532pt x 212.18095pt.
-<Figures/Empirical/cluster size1_1.png, id=612, 435.7881pt x 349.7868pt>
+<Figures/Empirical/cluster size1_1.png, id=611, 435.7881pt x 349.7868pt>
 File: Figures/Empirical/cluster size1_1.png Graphic file (type png)
 <use Figures/Empirical/cluster size1_1.png>
 Package pdftex.def Info: Figures/Empirical/cluster size1_1.png  used on input l
-ine 895.
+ine 896.
 (pdftex.def)             Requested size: 217.89351pt x 174.89297pt.
-<Figures/Empirical/cluster size1_2.png, id=613, 420.97275pt x 349.7868pt>
+<Figures/Empirical/cluster size1_2.png, id=612, 420.97275pt x 349.7868pt>
 File: Figures/Empirical/cluster size1_2.png Graphic file (type png)
 <use Figures/Empirical/cluster size1_2.png>
 Package pdftex.def Info: Figures/Empirical/cluster size1_2.png  used on input l
-ine 897.
+ine 898.
 (pdftex.def)             Requested size: 210.48586pt x 174.89297pt.
 
-Overfull \hbox (18.7594pt too wide) in paragraph at lines 894--899
+Overfull \hbox (18.7594pt too wide) in paragraph at lines 895--900
 [][]
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \vbox (badness 7468) has occurred while \output is active []
-
- [34pdfTeX warning (ext4): destination with the same identifier (name{figure.10
-}) has been already used, duplicate ignored
+[34pdfTeX warning (ext4): destination with the same identifier (name{table.4}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.924 
-       <./Figures/Empirical/cluster size3.png>]
-Underfull \vbox (badness 1005) has occurred while \output is active []
-
- [35pdfTeX warning (ext4): destination with the same identifier (name{figure.11
-}) has been already used, duplicate ignored
+l.925 
+      ] [35pdfTeX warning (ext4): destination with the same identifier (name{fi
+gure.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.926 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.4
-}) has been already used, duplicate ignored
+l.927 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.926 
-       <./Figures/Empirical/cluster size1_1.png> <./Figures/Empirical/cluster s
-ize1_2.png>] (./main.bbl [36] [37] [38])
+l.927 
+       <./Figures/Empirical/cluster size3.png> <./Figures/Empirical/cluster siz
+e1_1.png> <./Figures/Empirical/cluster size1_2.png>] (./main.bbl [36] [37]
+[38])
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 930.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 931.
 [39]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 930.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 931.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 930.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 930.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 931.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 931.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C0EF0CF850D5FCE1F0552EF87AADA455;2268.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 930.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 931.
  ) 
 Here is how much of TeX's memory you used:
  7873 strings out of 480608
@@ -821,7 +801,7 @@ e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2020/
 texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2
 020/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on main.pdf (39 pages, 4201218 bytes).
+Output written on main.pdf (39 pages, 4201141 bytes).
 PDF statistics:
  744 PDF objects out of 1000 (max. 8388607)
  636 compressed objects within 7 object streams

@@ -31,6 +31,7 @@
 \usepackage{tabularx,ragged2e}
 \usepackage{nccmath}
 \usepackage{caption}
+\usepackage{flexisym}
 \newcolumntype{C}{>{\Centering\arraybackslash}X}
 \hypersetup{
     colorlinks=true,
@@ -479,15 +480,15 @@ where $p_t$ is the probability that an arbitrary observation in $S$ belongs to c
 \begin{equation*}
     E(X_i,T_i;S)=\frac{|S_1|}{|S|}H(S_1)+\frac{|S_2|}{|S|}H(S_2).
 \end{equation*}
-Thus, for any continuous feature $X_i$, we can always find a threshold which minimizes the class information entropy and then complete a binary discretization. This leads to a divide-and-conquer approach in which we recursively discretize the two subsets after each binary discretization until some pre-specified stopping conditions are achieved. Inspired by \citet{fayyad1993multi}, in our implementation, we use the Minimal Description Length Principle (MDLP) to determine the stopping condition. Suppose $c$ is the number of classes in $S$, $c_i$ is the number of classes in $S_i$, $N$ is the number of observations in $S$. Meanwhile, suppose $G_c$ is the number of possible partitions, and it satisfies:
+Thus, for any continuous feature $X_i$, we can always find a threshold which minimizes the class information entropy and then complete a binary discretization. This leads to a divide-and-conquer approach in which we recursively discretize the two subsets after each binary discretization until some pre-specified stopping conditions are achieved. Inspired by \citet{fayyad1993multi}, in our implementation, we use the Minimal Description Length Principle (MDLP) to determine the stopping condition for the recursion. First of all, for any binary partition of a set of observations, we need the number of ways that the classese can present in the two subsets of observations. Suppose at some level during the recursion, we need to determine whether the partition should continue on a subset of observations $S^\prime\subseteq S$. Let $T^\prime$ be the number of classes in $S^\prime$, and $t_i^\prime$ be the number of classes in $S_i^\prime$ where $i\in\{1,2\}$. Furtherly, let $N=|S^\prime|$, the number of observations in $S^\prime$. Moreover, suppose $T_i^\prime$ is the decision threshold. For any class in the class set, it can present only in $S_1^\prime$, or only in $S_2^\prime$, or both. Now, denote $G_t^\prime$ as the number of all possible ways to ``locate'' each class in the two subsets, it satisfies:
 \begin{equation*}
-G_c=\left[\sum_{c_1=1}^{c-1}\binom{c}{c_1}2^{c_1}\right]+2^c-1=3^c-2
+G_t^\prime==3^{T^\prime}-2
 \end{equation*}
-The recursion stops if and only if
+where $-2$ means that we should exclude the cases in which all classes present in only one subset while the other is empty. Then, the recursion stops if and only if
 \begin{equation*}
-H(S)-E(X_i,T_i;S)<\frac{log_2(N-1)}{N}+\frac{\Delta(X_i,T_i;S)}{N}
+H(S^\prime)-E(X_i,T_i^\prime;S^\prime)<\frac{log_2(N-1)}{N}+\frac{\Delta(X_i,T_i^\prime;S^\prime)}{N}
 \end{equation*}
-where $\Delta(X_i,T_i;S)=log_2(G_c)-[c\cdot H(S)-c_1\cdot H(S_1)-c_2\cdot H(S_2)]$.
+where $\Delta(X_i,T_i^\prime;S^\prime)=log_2(G_t^\prime)-[T^\prime\cdot H(S^\prime)-t_1^\prime\cdot H(S_1^\prime)-t_2^\prime\cdot H(S_2^\prime)]$.
 
 We have tested both types of discretization methods on several data-sets. In general, the simple discretization method has a much lower time complexity than the minimal entropy method but the latter works better in some cases.
 
