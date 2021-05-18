@@ -12,6 +12,7 @@ from mdlp.discretization import MDLP
 from sklearn.metrics import normalized_mutual_info_score
 from math import log2
 from pyitlib import discrete_random_variable as drv
+from scipy.spatial import distance
 
 # get the normalized mutual information between two variables
 # i j are column indices, x, y are two column values
@@ -36,11 +37,29 @@ def get_CMI(var_4_cluster, y):
     for i in range(n_var):
         for j in range(i, n_var):
             if i == j:
-                result[i][j] = result[j][i] = 1
+                result[i,j] = result[j,i] = 1
             else:
                 var1 = list(var_4_cluster[:,i].flatten())
                 var2 = list(var_4_cluster[:,j].flatten())
-                result[i][j] = result[j][i] = drv.information_mutual_conditional(var1, var2, y)
+                result[i,j] = result[j,i] = drv.information_mutual_conditional(var1, var2, y)
+    return result
+
+def get_JS_matrix(var_4_cluster):
+    n_var = var_4_cluster.shape[1]
+    result = np.zeros((n_var, n_var))
+    for i in range(n_var):
+        for j in range(i, n_var):
+            if i == j:
+                result[i,j] = result[j,i] = 0
+            else:
+                var1 = var_4_cluster[:,i]
+                var2 = var_4_cluster[:,j]
+                const_i = np.all(var1 == var1[0])
+                const_j = np.all(var2 == var2[0])
+                if const_i or const_j:
+                    result[i,j] = result[j,i] = 1
+                else:
+                    result[i,j] = result[j,i] = distance.jensenshannon(var1, var2)
     return result
 
 class clustered_comonotonic:
@@ -216,6 +235,8 @@ class clustered_comonotonic:
             elif self.corrtype == 'cmi':
                 y = list(self.y_train.flatten())
                 corr_matrix = get_CMI(var_4_cluster, y)
+            elif self.corrtype == 'js_divergence': # measure by Jensen-Shannon divergence
+                corr_matrix = 1 - get_JS_matrix(var_4_cluster)
             if len(self.cont_col)==2:
                 corr_matrix = np.array([[1,corr_matrix],[corr_matrix,1]])
             
